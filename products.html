@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-lg bg-navbar navbar-dark py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#">
+        <image src="images/logo.png" alt="Logo">
+            <div>     
+                 <span class="fw-bold d-block lh-1">ONLINE</span>
+                  <small class="lh-1" style="font-size: 0.75rem;">Shopping</small>
+            </div>
+      </a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active-nav" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="cart.html">shopping cart</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="checkout.html">Checkout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- 2. SEARCH BAR SECTION -->
+    <section class="container-fluid px-4 my-3">
+        <div class="row justify-content-end">
+            <div class="col-md-3 col-sm-6">
+                <div class="input-group bg-light rounded-3 px-2 py-1 align-items-center border">
+                    <span class="bg-transparent border-0 text-muted me-1"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control bg-transparent border-0 p-0 shadow-none extra-small" placeholder="search products">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PRODUCTS GRID SECTION -->
+    <section class="container-fluid px-4 mb-5">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3">
+            
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Rectangle 18.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">Jeans Jacket</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">Size-55px,61px</p>
+                            <p class="fw-bold m-0 product-price">Tsh 20,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Rectangle 19.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">Blue slim jeans</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">Size-25px, 38px etc</p>
+                            <p class="fw-bold m-0 product-price">Tsh 28,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Rectangle 20.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">white sneaker</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">Size-39px,38px</p>
+                            <p class="fw-bold m-0 product-price">Tsh 20,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Product.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">Shoulder Bag</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="fw-bold m-0 product-price mt-3">Tsh 35,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Rectangle 22.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">shirt</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">Size-55px,61px</p>
+                            <p class="fw-bold m-0 product-price">Tsh 20,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Rectangle 23.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">Maroon shirt</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">Size-40px,46px</p>
+                            <p class="fw-bold m-0 product-price">Tsh 35,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Rectangle 24.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">Polo T-shirt</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">Size-30px,40px</p>
+                            <p class="fw-bold m-0 product-price">Tsh 25,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Rectangle 27.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">Casual sneaker</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">size-30px,35px,38px,40p</p>
+                            <p class="fw-bold m-0 product-price">Tsh 30,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=300" class="card-img-top product-img" alt="palazzo pants">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">palazzo pants</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">Size-26px,28px,30px</p>
+                            <p class="fw-bold m-0 product-price">Tsh 30,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Rectangle 31.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">slim jeans</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">Size-30px, 38px etc</p>
+                            <p class="fw-bold m-0 product-price">Tsh 28,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Rectangle 26.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">white T-shirt</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">size-36px,37px</p>
+                            <p class="fw-bold m-0 product-price">Tsh 15,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Rectangle 25.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">Red blazer</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">size-medium,large</p>
+                            <p class="fw-bold m-0 product-price">Tsh 40,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 13 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Rectangle 28.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">Plaid shirt</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">size-medium</p>
+                            <p class="fw-bold m-0 product-price">Tsh-15,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 14 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Rectangle 36.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">Floral dress</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">size-small,medium</p>
+                            <p class="fw-bold m-0 product-price">Tsh 50,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 15 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-white">
+                    <img src="images/Rectangle 33.png">
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="card-title fw-bold m-0 product-title">T-shirt</h6>
+                                <i class="bi bi-cart3 text-dark"></i>
+                            </div>
+                            <p class="text-muted m-0 extra-small">Size-25px, 38px etc.</p>
+                            <p class="fw-bold m-0 product-price">Tsh 28,000</p>
+                        </div>
+                        <button class="btn btn-custom btn-sm w-100 mt-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. FOOTER SECTION -->
+    <footer class="footer-bg text-white pt-4 pb-3">
+        <div class="container-fluid px-4">
+            <div class="row g-4 extra-small">
+                
+                <!-- Column 1 -->
+                <div class="col-md-3">
+                    <h6 class="fw-bold text-white mb-2" style="font-size: 11px;">ONLINE Shopping</h6>
+                    <p class="text-white-50 lh-sm mb-3">Quality product, fast delivery and secure online shopping. Delivery excellent to your doorstep everyday.</p>
+                    <p class="text-white-50 m-0 lh-sm">
+                        CONTACT<br>
+                        +255 798176541<br>
+                        Info@FashionStore.com
+                    </p>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-md-3">
+                    <h6 class="fw-bold text-white mb-2" style="font-size: 11px;">CUSTOMER SUPPORT</h6>
+                    <p class="fw-bold text-white mb-1">CUSTOMER HELP</p>
+                    <ul class="list-unstyled text-white-50 lh-sm mb-0">
+                        <li>shipping & delivery</li>
+                        <li>Returns & Refunds</li>
+                        <li>FAQs</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-md-3">
+                    <h6 class="fw-bold text-white mb-2" style="font-size: 11px;">QUICK LINKS</h6>
+                    <p class="fw-bold text-white mb-1">Quick Links</p>
+                    <ul class="list-unstyled text-white-50 lh-sm mb-0">
+                        <li>Shop all products</li>
+                        <li>shopping cart</li>
+                        <li>checkout</li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-md-3">
+                    <h6 class="fw-bold text-white mb-1" style="font-size: 11px;">STAY CONNECTED</h6>
+                    <p class="text-white-50 mb-2">subscribe for exclusive offers and update</p>
+                    
+                    <div class="d-flex mb-3">
+                        <input type="email" class="form-control form-control-sm rounded-0 border-0 bg-white" placeholder="your email Address">
+                        <button class="btn btn-subscribe btn-sm rounded-0 text-white px-2">SUBSCRIBE</button>
+                    </div>
+
+                    <h6 class="fw-bold text-white mb-1" style="font-size: 11px;">PAYMENT METHODS</h6>
+                    <div class="d-flex gap-2 align-items-center">
+                        <span class="badge bg-white text-dark rounded-circle p-1">Visa</span>
+                        <span class="badge bg-danger text-white rounded-circle p-1">MC</span>
+                        <span class="text-white-50">TigoPesa</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-3 opacity-25">
+
+            <div class="d-flex justify-content-between align-items-center extra-small text-white-50">
+                <div>
+                    FOLLOW US: 
+                    <a href="#" class="text-white ms-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white ms-1"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div>
+                    &copy; 2026 Fashion Store. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. NAVBAR SECTION -->
+  <nav class="navbar navbar-expand-lg bg-navbar navbar-dark py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#">
+        <image src="images/logo.png" alt="Logo">
+            <div>     
+                 <span class="fw-bold d-block lh-1">ONLINE</span>
+                  <small class="lh-1" style="font-size: 0.75rem;">Shopping</small>
+            </div>
+      </a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link active-nav" href="cart.html">shopping cart</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="checkout.html">Checkout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE TITLE -->
+  <div class="text-center my-4">
+    <h5 class="fw-bold mb-1">YOUR SHOPPING CART</h5>
+    <p class="text-muted small">Review your selected items</p>
+  </div>
+
+  <!-- MAIN CONTENT (CART & SUMMARY) -->
+  <div class="container my-4">
+    <div class="row g-4">
+      
+      <!-- 2. CART ITEMS SECTION -->
+      <div class="col-lg-8">
+        <div class="bg-cart-table p-4 rounded-3">
+          <!-- Header Row -->
+          <div class="row fw-bold pb-2 border-bottom border-dark text-secondary">
+            <div class="col-6">Product</div>
+            <div class="col-2 text-center">Price</div>
+            <div class="col-2 text-center">Quantity</div>
+            <div class="col-2 text-end">Total</div>
+          </div>
+
+          <!-- Item 1 -->
+          <div class="row align-items-center py-3 border-bottom border-light">
+            <div class="col-6 d-flex align-items-center gap-3">
+              <img src="images/Rectangle 33.png" class="rounded" alt="T-shirt">
+              <div>
+                <p class="mb-0 fw-semibold">T-shirt</p>
+                <small class="text-muted">Size-25px, 38px etc.</small>
+              </div>
+            </div>
+            <div class="col-2 text-center fw-semibold">Tsh 28,000</div>
+            <div class="col-2 text-center">
+              <span class="badge bg-secondary-subtle text-dark border px-2 py-1">- 1 +</span>
+            </div>
+            <div class="col-2 text-end fw-semibold">Tsh 28,000</div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="row align-items-center py-3 border-bottom border-light">
+            <div class="col-6 d-flex align-items-center gap-3">
+              <img src="images/Rectangle 25.png" class="rounded" alt="Red blazer">
+              <div>
+                <p class="mb-0 fw-semibold">Red blazer</p>
+                <small class="text-muted">size-medium, large, etc.</small>
+              </div>
+            </div>
+            <div class="col-2 text-center fw-semibold">Tsh 40,000</div>
+            <div class="col-2 text-center">
+              <span class="badge bg-secondary-subtle text-dark border px-2 py-1">- 1 +</span>
+            </div>
+            <div class="col-2 text-end fw-semibold">Tsh 40,000</div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="row align-items-center py-3">
+            <div class="col-6 d-flex align-items-center gap-3">
+              <img src="images/Rectangle 19.png">
+              <div>
+                <p class="mb-0 fw-semibold">Blue slim jeans</p>
+                <small class="text-muted">Size-25px, 38px, etc.</small>
+              </div>
+            </div>
+            <div class="col-2 text-center fw-semibold">Tsh 28,000</div>
+            <div class="col-2 text-center">
+              <span class="badge bg-secondary-subtle text-dark border px-2 py-1">- 1 +</span>
+            </div>
+            <div class="col-2 text-end fw-semibold">Tsh 28,000</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. ORDER SUMMARY SECTION -->
+      <div class="col-lg-4">
+        <div class="bg-summary p-4 rounded-3 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <h4 class="fw-bold mb-4">Order Summary</h4>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Subtotal</span>
+              <span class="fw-semibold">96,000</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Shipping</span>
+              <span class="fw-semibold">8000</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <span>Discount</span>
+              <span class="fw-semibold">0.1</span>
+            </div>
+            <hr class="border-dark my-3">
+            <div class="d-flex justify-content-between fs-5 fw-bold mb-4">
+              <span>Total</span>
+              <span>94,400</span>
+            </div>
+          </div>
+
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary-custom py-2 fw-semibold">Proceed to checkout</button>
+            <button class="btn btn-paypal py-2 fw-semibold">Checkout with <em class="text-primary">PayPal</em></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 4. FOOTER SECTION -->
+  <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row g-4 fs-7">
+        <div class="col-md-3">
+          <h6 class="fw-bold text-uppercase mb-2">Online Shopping</h6>
+          <p class="small text-secondary">Quality product, fast delivery and secure online shopping. Delivery excellent to your doorstep everyday.</p>
+          <div class="small text-secondary">
+            <p class="mb-0 fw-bold text-white">CONTACT</p>
+            <p class="mb-0">+255 798176541</p>
+            <p class="mb-0">info@FashionStore.com</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <h6 class="fw-bold text-uppercase mb-3">Customer Support</h6>
+          <ul class="list-unstyled small text-secondary lh-lg">
+            <li>shipping & delivery</li>
+            <li>Returns & Refunds</li>
+            <li>FAQs</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6 class="fw-bold text-uppercase mb-3">Quick Links</h6>
+          <ul class="list-unstyled small text-secondary lh-lg">
+            <li>Shop all products</li>
+            <li>shopping cart</li>
+            <li>checkout</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6 class="fw-bold text-uppercase mb-2">Stay Connected</h6>
+          <p class="small text-secondary mb-2">subscribe for exclusive offers and update</p>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control form-control-sm bg-dark text-white border-secondary" placeholder="your email Address">
+            <button class="btn btn-warning btn-sm text-uppercase fw-bold" type="button">Subscribe</button>
+          </div>
+          <p class="small text-uppercase mb-1">Payment Methods</p>
+          <div class="d-flex gap-2 align-items-center">
+            <span class="badge bg-danger">VISA</span>
+            <span class="badge bg-warning text-dark">MC</span>
+            <span class="small">TigoPesa</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+      <div class="text-center small text-secondary">
+        &copy;2026 Fashion Store. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

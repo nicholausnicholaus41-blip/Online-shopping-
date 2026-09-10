@@ -1,374 +1,247 @@
-body {
-  background: #6A5836;
-  font-family: Arial, sans-serif;
-}
+/* Custom Colors & Style Fixes */
 
-.custom-nav {
-  background: #67562e;
-  padding: 10px 0;
-}
-
-.logo {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.navbar-brand {
-  color: white;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-size: 16px;
-  display: flex;
-}
-
-.navbar-brand small {
-  font-size: 12px;
-  letter-spacing: 0;
-  display: flex;
-}
-
-.nav-link {
-  color: white !important;
-  font-size: 14px;
-  display: flex;
-}
-
-.nav-link.active,
-.nav-link:hover {
-  color: #43236d !important;
-  display: flex;
-
-}
-.nav-menu{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 50px;
-  
-}
-
-.hero {
-  min-height: 150px;
-  background: url("images/Rectangle\ 4.png") center/cover no-repeat;
-}
-
-.hero-overlay {
-  min-height: 150px;
-  display: grid;
-  place-items: center;
-  background: rgba(0, 0, 0, 0.25);
-}
-
-.hero h1 {
-  margin: 0;
-  font-size: clamp(26px, 4vw, 38px);
-  font-weight: bold;
-}
-
-.hero p {
-  font-weight: bold;
-  line-height: 1.1;
-}
-
-.hero-btn {
-  background: #79643b;
-  color: #111;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  padding: 8px 55px;
-}
-
-.hero-btn:hover {
-  background: purple;
-}
-
-.product-card {
-  text-align: center;
-}
-
-.product-card img {
-  width: 25%;
-  height: 100px;
-  object-fit: cover;
-
-}
-
-.product-info {
-  font-size: 12px;
-  padding-top: 25px;
-}
-
-.product-info p {
-  margin: 100px;
-}
-.containers{
-  background: white;
-  padding: 80px;
-  margin: 25px;
-}
-
-
-.footer {
-  background: #1c1c1c;
-  color: white;
-  padding: 16px 0;
-  font-size: 11px;
-}
-
-.footer h6 {
-  font-weight: bold;
-  font-size: 12px;
-  margin-bottom: 3px;
-}
-
-.footer p {
-  color: #bbb;
-  margin-bottom: 7px;
-  line-height: 1.2;
-}
-
-.footer a {
-  display: block;
-  color: #bbb;
-  text-decoration: none;
-  line-height: 1.35;
-}
-
-.footer a:hover {
-  color: white;
-}
-
-.subscribe-btn {
-  background: #776b00;
-  color: white;
-  border: none;
-  font-size: 10px;
-}
-
-@media (max-width: 991px) {
-  .navbar-nav {
-    padding-top: 12px;
-  }
-
-  .hero {
-    min-height: 220px;
-  }
-
-  .hero-overlay {
-    min-height: 220px;
-  }
-}
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: #bd9976;
-  font-family: Arial, sans-serif;
-}
-
-/* Navbar */
+/* Navbar Background Color */
 .custom-navbar {
-  background: #705d34;
-  margin: 12px 22px 0;
-  border-radius: 8px 8px 0 0;
-  min-height: 88px;
+    background-color: #5c4b37; /* Rangi ya brown ya juu */
 }
 
-.brand-logo {
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  display: flex;
-  align-items: center;
-  line-height: 15px;
+/* Logo Circular Shape */
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
 }
 
-.brand-logo img {
-  width: 72px;
-  height: 72px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 7px;
+.logo-circle-sm {
+    width: 25px;
+    height: 25px;
 }
 
-.brand-logo small {
-  display: block;
-  font-size: 12px;
-  letter-spacing: 0;
+/* Hero Section (Banner Background) */
+.hero-section{
+    min-height: 200px;
+    background-image: url("images/Rectangle 4.png"); 
+    background-size: cover; 
+    background-position: center; 
 }
 
-.nav-gap {
-  gap: 45px;
+/* Overlay dark layer kwa ajili ya maandishi yaonekane vizuri */
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
 }
 
-.nav-link {
-  color: white !important;
-  font-size: 13px;
+/* Button Colors */
+.btn-custom-brown {
+    background-color: #5c4b37;
+    color: #ffffff;
+    border: none;
 }
 
-.nav-link.active,
-.nav-link:hover {
-  color: #3f106e !important;
+.btn-custom-brown:hover {
+    background-color: #433627;
+    color: #ffffff;
 }
 
-/* Search */
-.search-section {
-  background: white;
-  margin: 0 22px;
-  height: 76px;
-  padding-top: 19px;
+.btn-custom-gold {
+    background-color: #a38241;
+    color: #ffffff;
 }
 
-.search-box {
-  width: 135px;
-  height: 31px;
-  display: flex;
-  background: #ddd;
-  border-radius: 8px;
-  overflow: hidden;
+/* Product Image Height Setup */
+.img-container img {
+    height: 300px;
+    width: 100%;
+}
+/* Custom Background Rangi ya nje */
+.bg-light-brown {
+    background-color: #a38d75;
 }
 
-.search-box input {
-  width: 105px;
-  border: none;
-  outline: none;
-  background: transparent;
-  padding-left: 10px;
-  font-size: 10px;
+/* Header Navbar Color */
+.header-bg {
+    background-color: #61503c;
 }
 
-.search-box button {
-  border: none;
-  background: transparent;
-  font-size: 17px;
-  cursor: pointer;
+/* Logo Circle Custom styling */
+.logo-circle {
+    width: 45px;
+    height: 45px;
+    font-size: 8px;
+    border: 1px solid #ccc;
 }
 
-/* Product cards */
-.products-section {
-  background: white;
-  margin: 0 22px;
-  padding: 0 22px 45px;
+/* Search input rounded custom borders */
+.rounded-pill-start {
+    border-top-left-radius: 50rem !important;
+    border-bottom-left-radius: 50rem !important;
 }
 
-.product-card img {
-  width: 100%;
-  height: 113px;
-  object-fit: cover;
+.rounded-pill-end {
+    border-top-right-radius: 50rem !important;
+    border-bottom-right-radius: 50rem !important;
 }
 
-.product-card h6 {
-  font-size: 12px;
-  font-weight: bold;
-  margin: 4px 0 0;
+/* 5 Columns layout kwa screens kubwa (Bootstrap default ina ishara za 12) */
+@media (min-width: 992px) {
+    .col-lg-2-4 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+/* Background ya Ukurasa Mzima */
+body {
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
 }
 
-.product-card p,
-.product-card strong {
-  display: block;
-  margin: 0;
-  font-size: 11px;
-  line-height: 13px;
+/* Color Palette kufanana na Picha */
+.custom-navbar {
+    background-color: #655238; /* Rangi ya Udongo (Brown Header) */
 }
 
-.product-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.footer-bg {
+    background-color: #1a1a1a; /* Dark Footer */
 }
 
-.product-bottom button {
-  border: none;
-  background: #79663d;
-  color: white;
-  border-radius: 12px;
-  padding: 2px 17px;
-  font-size: 11px;
-  font-weight: bold;
+/* Custom Buttons */
+.btn-custom {
+    background-color: #655238;
+    color: #ffffff;
+    border: none;
+    font-size: 11px;
+    padding: 3px 0;
 }
 
-.product-bottom span {
-  font-size: 24px;
-  line-height: 25px;
+.btn-custom:hover {
+    background-color: #4f3f2a;
+    color: #ffffff;
 }
 
-/* Footer */
-.footer {
-  background: #1a1a1a;
-  color: white;
-  margin: 0 22px 12px;
-  border-radius: 7px;
-  padding: 14px 18px;
-  font-size: 10px;
+.btn-subscribe {
+    background-color: #655238;
+    font-size: 10px;
 }
 
-.footer h6 {
-  font-size: 11px;
-  font-weight: bold;
-  margin-bottom: 2px;
+/* Header Elements */
+.logo-circle {
+    width: 45px;
+    height: 45px;
+    font-size: 9px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-.footer p {
-  color: #bbb;
-  margin-bottom: 8px;
-  line-height: 12px;
+.active-link {
+    color: #8c2a5c !important; /* Rangi ya zambarau/purple kwenye menu ya Products */
 }
 
-.footer a {
-  display: block;
-  color: #bbb;
-  text-decoration: none;
-  line-height: 13px;
+/* Product Card Formatting */
+.product-img {
+    height: 140px;
+    object-fit: cover;
 }
 
-.footer strong {
-  font-size: 11px;
+.product-title {
+    font-size: 12px;
 }
 
-.subscribe {
-  display: flex;
-  height: 17px;
+.product-price {
+    font-size: 11px;
 }
 
-.subscribe input {
-  min-width: 110px;
-  border: none;
-  padding-left: 7px;
-  font-size: 9px;
+.extra-small {
+    font-size: 10px;
+}
+/* Rangi za custom kulingana na screenshot */
+.bg-navbar { background-color: #635233; }
+.bg-cart-table { background-color: #e8e2d8; }
+.bg-summary { background-color: #e8e2d8; }
+.btn-primary-custom { background-color: #a39031; color: #fff; border: none; }
+.btn-primary-custom:hover { background-color: #8a7927; color: #fff; }
+.btn-paypal { background-color: #a3a1a1; color: #fff; border: none; }
+.active-nav { color: #5a189a !important; font-weight: bold; }
+
+
+/* Custom Colors */
+:root {
+    --primary-brown: #5d4900;
+    --card-brown: #665000;
+    --accent-gold: #826600;
 }
 
-.subscribe button {
-  border: none;
-  background: #7c7100;
-  color: white;
-  font-size: 8px;
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .custom-navbar,
-  .search-section,
-  .products-section,
-  .footer {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
+/* Navbar Custom */
+.nav-custom {
+    background-color: var(--primary-brown);
+}
 
-  .nav-gap {
-    gap: 0;
-  }
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 8px;
+}
 
-  .search-section {
-    height: 65px;
-  }
+.text-purple {
+    color: #a855f7 !important;
+}
 
-  .product-card img {
-    height: 500px;
-  }
- 
+/* Left Form Section */
+.form-card-custom {
+    background-color: var(--card-brown);
+    border-radius: 25px;
+}
+
+.custom-input {
+    border-radius: 20px;
+    background-color: #f0edeb;
+    border: none;
+    padding: 10px 20px;
+}
+
+.custom-input:focus {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+/* Right Summary Section */
+.summary-wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.top-oval {
+    background-color: var(--accent-gold);
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 2;
+}
+
+.summary-card {
+    background-color: #efebe4;
+    border-radius: 20px;
+    border: 1px solid #dcd6cd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-pay {
+    background-color: var(--accent-gold);
+}
+
+.btn-pay:hover {
+    background-color: var(--primary-brown);
+}
+
+/* Footer Custom */
+.footer-custom {
+    background-color: #121212;
+}    
