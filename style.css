@@ -1,11 +1,6 @@
-/* Custom Colors & Style Fixes */
-
-/* Navbar Background Color */
 .custom-navbar {
-    background-color: #5c4b37; /* Rangi ya brown ya juu */
+    background-color: #5c4b37; 
 }
-
-/* Logo Circular Shape */
 .logo-circle {
     width: 50px;
     height: 50px;
@@ -17,7 +12,6 @@
     height: 25px;
 }
 
-/* Hero Section (Banner Background) */
 .hero-section{
     min-height: 200px;
     background-image: url("images/Rectangle 4.png"); 
@@ -25,7 +19,6 @@
     background-position: center; 
 }
 
-/* Overlay dark layer kwa ajili ya maandishi yaonekane vizuri */
 .hero-section .overlay {
     position: absolute;
     top: 0;
@@ -35,7 +28,6 @@
     
 }
 
-/* Button Colors */
 .btn-custom-brown {
     background-color: #5c4b37;
     color: #ffffff;
@@ -52,22 +44,18 @@
     color: #ffffff;
 }
 
-/* Product Image Height Setup */
 .img-container img {
     height: 300px;
     width: 100%;
 }
-/* Custom Background Rangi ya nje */
 .bg-light-brown {
     background-color: #a38d75;
 }
 
-/* Header Navbar Color */
 .header-bg {
     background-color: #61503c;
 }
 
-/* Logo Circle Custom styling */
 .logo-circle {
     width: 45px;
     height: 45px;
@@ -75,7 +63,6 @@
     border: 1px solid #ccc;
 }
 
-/* Search input rounded custom borders */
 .rounded-pill-start {
     border-top-left-radius: 50rem !important;
     border-bottom-left-radius: 50rem !important;
@@ -86,29 +73,25 @@
     border-bottom-right-radius: 50rem !important;
 }
 
-/* 5 Columns layout kwa screens kubwa (Bootstrap default ina ishara za 12) */
 @media (min-width: 992px) {
     .col-lg-2-4 {
         flex: 0 0 auto;
         width: 20%;
     }
 }
-/* Background ya Ukurasa Mzima */
 body {
     background-color: #f3f3f3;
     font-family: Arial, sans-serif;
 }
 
-/* Color Palette kufanana na Picha */
 .custom-navbar {
-    background-color: #655238; /* Rangi ya Udongo (Brown Header) */
+    background-color: #655238;
 }
 
 .footer-bg {
-    background-color: #1a1a1a; /* Dark Footer */
+    background-color: #1a1a1a;
 }
 
-/* Custom Buttons */
 .btn-custom {
     background-color: #655238;
     color: #ffffff;
@@ -127,7 +110,6 @@ body {
     font-size: 10px;
 }
 
-/* Header Elements */
 .logo-circle {
     width: 45px;
     height: 45px;
@@ -136,10 +118,9 @@ body {
 }
 
 .active-link {
-    color: #8c2a5c !important; /* Rangi ya zambarau/purple kwenye menu ya Products */
+    color: #8c2a5c !important; 
 }
 
-/* Product Card Formatting */
 .product-img {
     height: 140px;
     object-fit: cover;
@@ -156,7 +137,6 @@ body {
 .extra-small {
     font-size: 10px;
 }
-/* Rangi za custom kulingana na screenshot */
 .bg-navbar { background-color: #635233; }
 .bg-cart-table { background-color: #e8e2d8; }
 .bg-summary { background-color: #e8e2d8; }
@@ -166,7 +146,6 @@ body {
 .active-nav { color: #5a189a !important; font-weight: bold; }
 
 
-/* Custom Colors */
 :root {
     --primary-brown: #5d4900;
     --card-brown: #665000;
@@ -178,7 +157,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Navbar Custom */
 .nav-custom {
     background-color: var(--primary-brown);
 }
@@ -193,7 +171,6 @@ body {
     color: #a855f7 !important;
 }
 
-/* Left Form Section */
 .form-card-custom {
     background-color: var(--card-brown);
     border-radius: 25px;
@@ -211,7 +188,6 @@ body {
     box-shadow: none;
 }
 
-/* Right Summary Section */
 .summary-wrapper {
     max-width: 320px;
     margin: 0 auto;
@@ -241,7 +217,6 @@ body {
     background-color: var(--primary-brown);
 }
 
-/* Footer Custom */
 .footer-custom {
     background-color: #121212;
 }    
